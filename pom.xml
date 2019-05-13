@@ -26,14 +26,14 @@
   <packaging>pom</packaging>
   <name>${project.artifactId}</name>
   <description>Maven core and resolver support</description>
-  <url>https://github.com/${team.name}/maven-import-pom-root</url>
+  <url>https://github.com/${team.name}/maven-import-bom</url>
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/infrastructurebuilder/maven-import-pom-root/issues</url>
+    <url>https://github.com/infrastructurebuilder/maven-import-bom/issues</url>
   </issueManagement>
   <ciManagement>
     <system>jenkins</system>
-    <url>https://jenkins.infrastructurebuilder.org/job/maven-import-pom-root</url>
+    <url>https://jenkins.infrastructurebuilder.org/job/maven-import-bom</url>
   </ciManagement>
   <licenses>
     <license>
@@ -62,9 +62,9 @@
   </contributors>
 
   <scm>
-    <connection>scm:git:https://github.com/${team.name}/maven-import-pom-root.git</connection>
-    <url>https://github.com/${team.name}/maven-import-pom-root</url>
-    <developerConnection>scm:git:git@github.com:${team.name}/maven-import-pom-root.git</developerConnection>
+    <connection>scm:git:https://github.com/${team.name}/maven-import-bom.git</connection>
+    <url>https://github.com/${team.name}/maven-import-bom</url>
+    <developerConnection>scm:git:git@github.com:${team.name}/maven-import-bom.git</developerConnection>
   </scm>
 
   <distributionManagement>
