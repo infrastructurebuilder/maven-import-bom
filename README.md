@@ -1,4 +1,4 @@
-# maven-import-pom-root
+# maven-import-bom
 
 
 DM for various outside projects
