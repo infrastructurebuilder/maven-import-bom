@@ -28,7 +28,7 @@
   <description>Maven core and resolver support</description>
   <url>https://github.com/${team.name}/maven-import-bom</url>
   <prerequisites>
-    <maven>3.6.1</maven>
+    <maven>${maven.version}</maven>
   </prerequisites>
   <issueManagement>
     <system>GitHub</system>
