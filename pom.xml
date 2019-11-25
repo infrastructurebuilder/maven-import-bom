@@ -98,6 +98,7 @@
     <maven.resolver.version>1.4.1</maven.resolver.version>
     <maven.reporting.api.version>3.0</maven.reporting.api.version>
     <maven.reporting.impl.version>3.0.0</maven.reporting.impl.version>
+    <maven.shared.utils.version>3.2.1</maven.shared.utils.version>
     <maven.site.plugin.version>3.8.2</maven.site.plugin.version>
     <maven.source.plugin.version>3.1.0</maven.source.plugin.version>
     <maven.version>3.6.2</maven.version>
@@ -269,6 +270,11 @@
         <groupId>org.apache.maven.reporting</groupId>
         <artifactId>maven-reporting-api</artifactId>
         <version>${maven.reporting.api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven.shared</groupId>
+        <artifactId>maven-shared-utils</artifactId>
+        <version>${maven.shared.utils.version}</version>
       </dependency>
 
     </dependencies>
