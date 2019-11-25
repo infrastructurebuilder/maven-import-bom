@@ -16,7 +16,9 @@
     limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.infrastructurebuilder</groupId>
   <artifactId>maven-import-bom</artifactId>
@@ -96,6 +98,8 @@
     <maven.project.version>2.2.1</maven.project.version>
     <maven.release.plugin.version>2.5.3</maven.release.plugin.version>
     <maven.resolver.version>1.4.1</maven.resolver.version>
+    <maven.reporting.api.version>3.0</maven.reporting.api.version>
+    <maven.reporting.impl.version>3.0.0</maven.reporting.impl.version>
     <maven.site.plugin.version>3.8.2</maven.site.plugin.version>
     <maven.source.plugin.version>3.1.0</maven.source.plugin.version>
     <maven.version>3.6.2</maven.version>
@@ -258,6 +262,17 @@
         <artifactId>plexus-archiver</artifactId>
         <version>${plexus.archiver.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.apache.maven.reporting</groupId>
+        <artifactId>maven-reporting-impl</artifactId>
+        <version>${maven.reporting.impl.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven.reporting</groupId>
+        <artifactId>maven-reporting-api</artifactId>
+        <version>${maven.reporting.api.version}</version>
+      </dependency>
+
     </dependencies>
   </dependencyManagement>
   <build>
