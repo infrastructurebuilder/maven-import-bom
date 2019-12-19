@@ -76,7 +76,7 @@
     <maven.clean.plugin.version>3.1.0</maven.clean.plugin.version>
     <maven.deploy.plugin.version>3.0.0-M1</maven.deploy.plugin.version>
     <maven.doxia.version>1.9</maven.doxia.version>
-    <maven.filtering.version>3.1.2</maven.filtering.version>
+    <maven.filtering.version>3.1.1</maven.filtering.version>
     <maven.gpg.plugin.version>1.6</maven.gpg.plugin.version>
     <maven.install.plugin.version>3.0.0-M1</maven.install.plugin.version>
     <maven.nexus.staging.plugin.version>1.6.8</maven.nexus.staging.plugin.version>
@@ -273,6 +273,11 @@
         <groupId>javax.annotation</groupId>
         <artifactId>jsr250-api</artifactId>
         <version>${jsr250.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven.shared</groupId>
+        <artifactId>maven-filtering</artifactId>
+        <version>${maven.filtering.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
