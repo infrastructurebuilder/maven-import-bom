@@ -71,11 +71,11 @@
   <properties>
     <team.name>infrastructurebuilder</team.name>
     <eclipse.sisu.plexus.version>0.3.4</eclipse.sisu.plexus.version>
-    <google.guice.version>4.2.1</google.guice.version>
+    <google.guice.version>4.2.3</google.guice.version>
     <maven.archiver.version>3.5.0</maven.archiver.version>
     <maven.clean.plugin.version>3.1.0</maven.clean.plugin.version>
     <maven.deploy.plugin.version>3.0.0-M1</maven.deploy.plugin.version>
-    <maven.doxia.version>1.9</maven.doxia.version>
+    <maven.doxia.version>1.9.1</maven.doxia.version>
     <maven.filtering.version>3.1.1</maven.filtering.version>
     <maven.gpg.plugin.version>1.6</maven.gpg.plugin.version>
     <maven.install.plugin.version>3.0.0-M1</maven.install.plugin.version>
@@ -85,18 +85,18 @@
     <maven.plugin.testing.harness.version>3.3.0</maven.plugin.testing.harness.version>
     <maven.project.info.plugin.version>3.0.0</maven.project.info.plugin.version>
     <maven.project.version>2.2.1</maven.project.version>
-    <maven.release.plugin.version>2.5.3</maven.release.plugin.version>
-    <maven.resolver.version>1.4.1</maven.resolver.version>
+    <maven.release.plugin.version>3.0.0-M1</maven.release.plugin.version>
+    <maven.resolver.version>1.4.2</maven.resolver.version>
     <maven.reporting.api.version>3.0</maven.reporting.api.version>
     <maven.reporting.impl.version>3.0.0</maven.reporting.impl.version>
     <maven.shared.utils.version>3.2.1</maven.shared.utils.version>
-    <maven.site.plugin.version>3.8.2</maven.site.plugin.version>
+    <maven.site.plugin.version>3.9.0</maven.site.plugin.version>
     <maven.source.plugin.version>3.1.0</maven.source.plugin.version>
     <maven.version>3.6.3</maven.version>
-    <maven.wagon.version>3.3.4</maven.wagon.version>
-    <plexus.archiver.version>4.1.0</plexus.archiver.version>
+    <maven.wagon.version>3.4.0</maven.wagon.version>
+    <plexus.archiver.version>4.2.2</plexus.archiver.version>
     <plexus.interpolation.version>1.26</plexus.interpolation.version>
-    <plexus.utils.version>3.2.1</plexus.utils.version>
+    <plexus.utils.version>3.3.0</plexus.utils.version>
     <jsr250.version>1.0</jsr250.version>
   </properties>
   <dependencyManagement>
