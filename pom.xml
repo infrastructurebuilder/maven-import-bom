@@ -11,7 +11,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.infrastructurebuilder</groupId>
   <artifactId>maven-import-bom</artifactId>
-  <version>3.6.3.4-SNAPSHOT</version>
+  <version>3.6.3.3-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>${project.artifactId}</name>
   <description>Maven core and resolver support</description>
