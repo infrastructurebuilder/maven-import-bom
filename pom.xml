@@ -11,7 +11,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.infrastructurebuilder</groupId>
   <artifactId>maven-import-bom</artifactId>
-  <version>3.6.3.4-SNAPSHOT</version>
+  <version>3.6.3.4</version>
   <packaging>pom</packaging>
   <name>${project.artifactId}</name>
   <description>Maven core and resolver support</description>
@@ -54,7 +54,7 @@
     <connection>scm:git:https://github.com/${team.name}/maven-import-bom.git</connection>
     <url>https://github.com/${team.name}/maven-import-bom</url>
     <developerConnection>scm:git:git@github.com:${team.name}/maven-import-bom.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>maven-import-bom-3.6.3.4</tag>
   </scm>
 
   <distributionManagement>
