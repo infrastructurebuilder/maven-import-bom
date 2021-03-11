@@ -93,7 +93,7 @@
     <maven.site.plugin.version>3.9.1</maven.site.plugin.version>
     <maven.source.plugin.version>3.2.1</maven.source.plugin.version>
     <maven.version>3.6.3</maven.version>
-    <maven.wagon.version>3.4.2</maven.wagon.version>
+    <maven.wagon.version>3.4.3</maven.wagon.version>
     <plexus.archiver.version>4.2.4</plexus.archiver.version>
     <plexus.interpolation.version>1.26</plexus.interpolation.version>
     <plexus.utils.version>3.3.0</plexus.utils.version>
