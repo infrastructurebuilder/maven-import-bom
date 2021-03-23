@@ -86,7 +86,7 @@
     <maven.project.info.plugin.version>3.1.1</maven.project.info.plugin.version>
     <maven.project.version>2.2.1</maven.project.version>
     <maven.release.plugin.version>3.0.0-M1</maven.release.plugin.version>
-    <maven.resolver.version>1.6.1</maven.resolver.version>
+    <maven.resolver.version>1.6.2</maven.resolver.version>
     <maven.reporting.api.version>3.0</maven.reporting.api.version>
     <maven.reporting.impl.version>3.0.0</maven.reporting.impl.version>
     <maven.shared.utils.version>3.3.3</maven.shared.utils.version>
