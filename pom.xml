@@ -71,7 +71,7 @@
   <properties>
     <team.name>infrastructurebuilder</team.name>
     <eclipse.sisu.plexus.version>0.9.0.M1</eclipse.sisu.plexus.version>
-    <google.guice.version>4.2.2_no-aop</google.guice.version>
+    <google.guice.version>4.2.2</google.guice.version>
     <maven.archiver.version>3.6.0</maven.archiver.version>
     <maven.clean.plugin.version>3.2.0</maven.clean.plugin.version>
     <maven.deploy.plugin.version>3.0.0</maven.deploy.plugin.version>
