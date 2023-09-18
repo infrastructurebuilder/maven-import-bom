@@ -109,7 +109,6 @@
         <groupId>com.google.inject</groupId>
         <artifactId>guice</artifactId>
         <version>${google.guice.version}</version>
-        <classifier>no_aop</classifier>
       </dependency>
       <dependency>
         <groupId>com.google.inject.extensions</groupId>
