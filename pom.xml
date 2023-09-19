@@ -82,7 +82,7 @@
     <maven.nexus.staging.plugin.version>1.6.13</maven.nexus.staging.plugin.version>
     <maven.plexus.component.metadata.version>1.7.1</maven.plexus.component.metadata.version>
     <maven.plugin.annotations.version>3.9.0</maven.plugin.annotations.version>
-    <maven.plugin.testing.harness.version>4.4.0-alpha-1</maven.plugin.testing.harness.version>
+    <maven.plugin.testing.harness.version>4.0.0-alpha-1</maven.plugin.testing.harness.version>
     <maven.project.info.plugin.version>3.4.5</maven.project.info.plugin.version>
     <maven.project.version>3.0-alpha-2</maven.project.version>
     <maven.release.plugin.version>3.0.1</maven.release.plugin.version>
