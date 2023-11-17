@@ -13,7 +13,7 @@ permissions
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.infrastructurebuilder</groupId>
   <artifactId>maven-import-bom</artifactId>
-  <version>3.9.5.1</version>
+  <version>3.9.5.2-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>${project.artifactId}</name>
   <description>Maven core and resolver support</description>
@@ -57,7 +57,7 @@ permissions
     <url>https://github.com/${team.name}/maven-import-bom</url>
     <developerConnection>
       scm:git:git@github.com:${team.name}/maven-import-bom.git</developerConnection>
-    <tag>maven-import-bom-3.9.5.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
