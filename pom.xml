@@ -14,7 +14,7 @@ permissions
 
 	<groupId>org.infrastructurebuilder</groupId>
 	<artifactId>maven-import-bom</artifactId>
-	<version>3.9.9.0</version>
+	<version>3.9.9.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>${project.artifactId}</name>
@@ -50,7 +50,7 @@ permissions
 		<url>https://github.com/${team.name}/maven-import-bom</url>
 		<developerConnection>
 			scm:git:git@github.com:${team.name}/maven-import-bom.git</developerConnection>
-		<tag>maven-import-bom-3.9.9.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 	<issueManagement>
 		<system>GitHub</system>
