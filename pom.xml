@@ -92,8 +92,9 @@ permissions
 		<maven.plugin.testing.harness.version>3.3.0</maven.plugin.testing.harness.version>
 		<maven.project.info.plugin.version>3.9.0</maven.project.info.plugin.version>
 		<maven.project.version>3.0-alpha-2</maven.project.version>
-		<maven.release.plugin.version>3.1.1</maven.release.plugin.version>
 		<maven.resolver.version>2.0.7</maven.resolver.version><!-- 1.9.22 -->
+	        <maven.clean.plugin.version>3.4.1</maven.clean.plugin.version>
+	        <maven.deploy.plugin.version>3.1.4</maven.deploy.plugin.version>
 		<maven.reporting.api.version>3.1.1</maven.reporting.api.version>
 		<maven.reporting.impl.version>3.2.0</maven.reporting.impl.version>
 		<maven.shared.utils.version>3.4.2</maven.shared.utils.version>
