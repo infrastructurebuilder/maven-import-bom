@@ -9,12 +9,12 @@ distributed
   express or implied. See the License for the specific language governing
 permissions
   and limitations under the License. -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.infrastructurebuilder</groupId>
 	<artifactId>maven-import-bom</artifactId>
-	<version>3.9.9.1-SNAPSHOT</version>
+	<version>3.9.11.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>${project.artifactId}</name>
@@ -75,20 +75,21 @@ permissions
 		<team.name>infrastructurebuilder</team.name>
 		<apache.httpclient.version>4.5.14</apache.httpclient.version>
 		<apache.httpcore.version>4.4.16</apache.httpcore.version>
-		<commons.cli.version>1.9.0</commons.cli.version>
-		<commons.codec.version>1.18.0</commons.codec.version>
-		<commons.lang3.version>3.17.0</commons.lang3.version>
-		<eclipse.sisu.inject.version>0.9.0.M3</eclipse.sisu.inject.version>
-		<eclipse.sisu.plexus.version>0.9.0.M3</eclipse.sisu.plexus.version>
+		<commons.cli.version>1.10.0</commons.cli.version>
+		<commons.codec.version>1.19.0</commons.codec.version>
+		<commons.lang3.version>3.18.0</commons.lang3.version>
+		<eclipse.sisu.inject.version>0.9.0.M4</eclipse.sisu.inject.version>
+		<eclipse.sisu.plexus.version>0.9.0.M4</eclipse.sisu.plexus.version>
 		<flatten.mode>ossrh</flatten.mode>
-		<google.guava.version>33.4.0-jre</google.guava.version>
+		<google.guava.version>33.4.8-jre</google.guava.version>
 		<google.guice.version>7.0.0</google.guice.version>
 		<indent.size>2</indent.size>
 		<javax.annotationapi.version>1.3.2</javax.annotationapi.version>
 		<jsr250.version>1.0</jsr250.version>
 		<line.length>132</line.length>
-		<maven.archiver.version>3.6.3</maven.archiver.version>
-		<maven.clean.plugin.version>3.4.1</maven.clean.plugin.version>
+		<maven.archiver.version>3.6.4</maven.archiver.version>
+		<maven.central.publishing.plugin.version>0.8.0</maven.central.publishing.plugin.version>
+		<maven.clean.plugin.version>3.5.0</maven.clean.plugin.version>
 		<maven.deploy.plugin.version>3.1.4</maven.deploy.plugin.version>
 		<maven.doxia.version>1.12.0</maven.doxia.version>
 		<maven.filtering.version>3.4.0</maven.filtering.version>
@@ -103,19 +104,19 @@ permissions
 		<maven.release.plugin.version>3.1.1</maven.release.plugin.version>
 		<maven.reporting.api.version>3.1.1</maven.reporting.api.version>
 		<maven.reporting.impl.version>3.2.0</maven.reporting.impl.version>
-		<maven.resolver.version>2.0.7</maven.resolver.version><!-- 1.9.22 -->
+		<maven.resolver.version>2.0.11</maven.resolver.version><!-- 1.9.22 -->
 		<maven.shared.utils.version>3.4.2</maven.shared.utils.version>
 		<maven.site.plugin.version>3.21.0</maven.site.plugin.version>
 		<maven.source.plugin.version>3.2.1</maven.source.plugin.version>
-		<maven.version>3.9.9</maven.version>
+		<maven.version>3.9.11</maven.version>
 		<maven.wagon.version>3.5.3</maven.wagon.version>
 		<plexus.archiver.version>4.9.0</plexus.archiver.version>
 		<plexus.cipher.version>3.0.0</plexus.cipher.version>
 		<plexus.component.annotations.version>2.2.0</plexus.component.annotations.version>
 		<plexus.container.default.version>2.1.1</plexus.container.default.version>
-		<plexus.interpolation.version>1.27</plexus.interpolation.version>
+		<plexus.interpolation.version>1.28</plexus.interpolation.version>
 		<plexus.sec.dispatcher.version>3.0.0</plexus.sec.dispatcher.version>
-		<plexus.utils.version>3.6.0</plexus.utils.version>
+		<plexus.utils.version>4.0.2</plexus.utils.version>
 		<tidy.pom.maven.plugin.version>1.4.0</tidy.pom.maven.plugin.version>
 
 	</properties>
@@ -295,6 +296,12 @@ permissions
 			</dependency>
 			<dependency>
 				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-http-shared</artifactId>
+				<version>${maven.wagon.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.maven.wagon</groupId>
 				<artifactId>wagon-provider-api</artifactId>
 				<version>${maven.wagon.version}</version>
 				<scope>provided</scope>
@@ -465,6 +472,16 @@ permissions
 						</dependency>
 					</dependencies>
 				</plugin>
+		        <plugin>
+		          <groupId>org.sonatype.central</groupId>
+		          <artifactId>central-publishing-maven-plugin</artifactId>
+		          <version>${maven.central.publishing.plugin.version}</version>
+		          <extensions>true</extensions>
+		          <configuration>
+		            <publishingServerId>central</publishingServerId>
+		          </configuration>
+		        </plugin>
+<!--
 				<plugin>
 					<groupId>org.sonatype.plugins</groupId>
 					<artifactId>nexus-staging-maven-plugin</artifactId>
@@ -477,6 +494,7 @@ permissions
 						<stagingProgressTimeoutMinutes>10</stagingProgressTimeoutMinutes>
 					</configuration>
 				</plugin>
+-->				
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>tidy-maven-plugin</artifactId>
@@ -499,11 +517,18 @@ permissions
 			</plugins>
 		</pluginManagement>
 		<plugins>
+        <plugin>
+          <groupId>org.sonatype.central</groupId>
+          <artifactId>central-publishing-maven-plugin</artifactId>
+          <extensions>true</extensions>
+        </plugin>
+<!-- 
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
 				<extensions>true</extensions>
 			</plugin>
+-->
 		</plugins>
 	</build>
 
